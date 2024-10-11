@@ -100,5 +100,22 @@ class Chair {
 
 int main() {
 
+     cout << fixed << setprecision(2); 
+
+    srand(static_cast<unsigned int>(time(0))); 
+
+    Chair* chairPtr = new Chair; 
+
+    chairPtr->print(); 
+
+    double setPrices[SIZE] = {525.25, 434.34, 252.52}; 
+
+    Chair* livingChair = new Chair(3, setPrices); 
+    livingChair->print(); 
+
+    delete livingChair; 
+
+    livingChair = nullptr;
+
 return 0; 
 }
