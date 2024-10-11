@@ -1,4 +1,5 @@
 #include <iostream> 
+#include <iomanip> 
 #include <cstdlib> 
 using namespace std; 
 
@@ -82,5 +83,22 @@ class Chair {
             return sum / SIZE; 
         }
 
-        
+         void print() {
+
+            cout << "CHAIR DATA - legs: " << legs << endl; 
+
+            cout << "Price history: ";
+
+            for (int i = 0; i < SIZE; i++)
+
+            cout << "$" << fixed << setprecision(2) << prices[i] << " " << endl;
+
+            cout << "Historical avg price: " << fixed << setprecision(2) << getAveragePrice() << endl << endl; 
+
+        }
 };
+
+int main() {
+
+return 0; 
+}
