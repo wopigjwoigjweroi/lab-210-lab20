@@ -119,6 +119,13 @@ int main() {
 
     Chair* collection = new Chair[SIZE]; 
 
+    for (int i = 0; i < SIZE; i++) {
+
+        cout << i + 1 << endl; 
+
+        collection[i].print(); 
+    }
+
     delete chairPtr; 
 
     chairPtr = nullptr; 
