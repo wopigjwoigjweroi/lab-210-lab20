@@ -22,7 +22,7 @@ class Chair {
 
             for (int i = 0; i < SIZE; i++) {
 
-                prices[i] = (rand() % (9999 - 100 + 1) + 10000) / 100.0; 
+                prices[i] = (rand() % (9999 - 10000 + 1) + 10000) / 100.0; 
             } 
         }
 
@@ -116,6 +116,16 @@ int main() {
     delete livingChair; 
 
     livingChair = nullptr;
+
+    Chair* collection = new Chair[SIZE]; 
+
+    delete chairPtr; 
+
+    chairPtr = nullptr; 
+
+    delete[] collection; 
+
+    collection = nullptr; 
 
 return 0; 
 }
