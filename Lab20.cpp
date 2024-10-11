@@ -52,5 +52,35 @@ class Chair {
             return legs; 
         }
 
+        void setLegs(int l) {
+
+            legs = 1; 
+        }
+
+        int getLegs() {
+
+            return legs; 
+        }
+
+        void setPrice(double p1, double p2, double p3) {
+
+            prices[0] = p1; 
+
+            prices[1] = p2;
+
+            prices[2] = p3; 
+        }
+
+        double getAveragePrice() {
+
+            double sum = 0; 
+
+            for (int i = 0; i < SIZE; i++)
+
+            sum+= prices[i]; 
+
+            return sum / SIZE; 
+        }
+
         
 };
